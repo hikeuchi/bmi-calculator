@@ -2,13 +2,13 @@ from dataclasses import dataclass
 
 
 def _calculate_bmi(weight, height) -> float:
-    return round(weight / (height ** 2))
+    return round(weight / (height ** 2), 1)  # 小数点以下1位で丸める
 
 
 def _calculate_recommended_weight(height: float) -> float:
     recommended_weight = (height ** 2) * 22
     recommended_weight = round(recommended_weight, 1)  # 小数点以下1位で丸める
-    
+
     return recommended_weight
 
 
