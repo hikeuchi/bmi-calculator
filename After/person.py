@@ -49,8 +49,7 @@ class Person():
 
 
 def main():
-    person = Person.create(weight=50, height_cm=160)
-    person.print_bmi_result()
+    pass
 
 
 if __name__ == "__main__":
