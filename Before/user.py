@@ -1,4 +1,4 @@
-class Person():
+class User():
 
     def __init__(self, weight, height_cm):
         self.weight = weight

@@ -1,4 +1,4 @@
-from person import Person
+from user import User
 
 
 def main():
@@ -6,8 +6,8 @@ def main():
     weight = 50  # 体重
     height = 160  # 身長(cm)
 
-    person = Person.create(weight=weight, height_cm=height)
-    person.print_bmi_result()
+    user = User.create(weight=weight, height_cm=height)
+    user.print_bmi_result()
 
 
 if __name__ == "__main__":

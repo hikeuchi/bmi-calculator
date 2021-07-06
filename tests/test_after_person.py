@@ -4,7 +4,7 @@ import unittest
 class TestCalculateBmi(unittest.TestCase):
 
     def test_valid(self):
-        from After.person import _calculate_bmi
+        from After.user import _calculate_bmi
 
         # （期待値, 体重, 身長）
         test_cases = (

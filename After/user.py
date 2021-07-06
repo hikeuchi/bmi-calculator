@@ -1,4 +1,4 @@
-from __future__ import annotations  # Person.createで前方参照するのに必要
+from __future__ import annotations  # User.createで前方参照するのに必要
 from dataclasses import dataclass
 
 
@@ -27,14 +27,14 @@ def _calculate_recommended_weight(height: float) -> float:
 
 
 @dataclass
-class Person():
+class User():
     weight: float  # 体重(kg)
     height: float  # 身長（m）
 
     @classmethod
-    def create(cls, weight: float, height_cm: float) -> Person:
+    def create(cls, weight: float, height_cm: float) -> User:
         height_m = float(height_cm) / 100
-        return Person(
+        return User(
             weight=weight,
             height=height_m
         )

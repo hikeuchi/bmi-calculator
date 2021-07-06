@@ -4,16 +4,16 @@ import unittest
 class TestCalculateBmi(unittest.TestCase):
 
     def test_valid(self):
-        from Before.person import Person
+        from Before.user import User
 
-        # （期待値, personのインスタンス）
+        # （期待値, userのインスタンス）
         test_cases = (
-            (19.5, Person(weight=50, height_cm=160)),
+            (19.5, User(weight=50, height_cm=160)),
         )
 
-        for expected, person in test_cases:
+        for expected, user in test_cases:
             with self.subTest():
-                actual = person._calculate_bmi()
+                actual = user._calculate_bmi()
                 self.assertEqual(expected, actual)
 
 
