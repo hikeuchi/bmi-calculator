@@ -1,3 +1,4 @@
+from __future__ import annotations  # Person.createで前方参照するのに必要
 from dataclasses import dataclass
 
 
@@ -31,7 +32,7 @@ class Person():
     height: float  # 身長（m）
 
     @classmethod
-    def create(cls, weight: float, height_cm: float) -> 'Person':
+    def create(cls, weight: float, height_cm: float) -> Person:
         height_m = float(height_cm) / 100
         return Person(
             weight=weight,
